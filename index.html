@@ -29,7 +29,32 @@
         background-size: cover;
         -o-background-size: cover;
       }
+      
+       .container-fluid {
+          padding-left:0;
+          padding-right:0;
+      }
+      
+      .jumbotron {
+        background: black;
+          margin-bottom:0;
+      }
+      
+         /* Styles pour les tablettes */
+        @media (min-width: 768px) {
+        
+      
+        }
 
+      /* Styles pour les écrans moyens et grands */
+      @media (min-width: 992px) {
+       
+      }
+      
+      footer {
+          margin-top:60px;
+      }
+      }
 
     </style>
 
@@ -41,12 +66,18 @@
 
       <!-- Navigation
       ================================================== -->
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-12">
     <a href="#">La maison de l'architecture</a>
      <ul>
       <li><a href="#accueil">Accueil</a></li>
       <li><a href="#qui">Qui sommes-nous ?</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    </div>
+        </div>
+            </div>
 
  
 
@@ -54,15 +85,42 @@
 
     <!-- Caroussel
     ================================================== -->
-    <img src="assets/img/archi1.jpg" alt="Architecture">
+     <div class="container-fluid">
+     
+    <nav class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12" >
     <img src="assets/img/archi2.jpg" alt="Architecture">
+    </div>
+    </nav>
+    
+    
+      <nav class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12" >
     <img src="assets/img/archi3.jpg" alt="Architecture">
+    </div>
+    </nav>
+    
+      <nav class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12" >
     <img src="assets/img/archi4.jpg" alt="Architecture">
-    <div class="container">
-
+    </div>
+    </nav>
+    
+    </div>
+    
+    
+    <div class="container-fluid">
+  
     <h1 class="text-center">Bienvenue dans notre espace</h1>
-    <img src="assets/img/accueil.jpg" alt="Accueil">     
+    </div>
+      <nav class="row">
+       <div class="col-xs-6 col-sm-8 col-md-8" >
+    <img src="assets/img/accueil.jpg" alt="Accueil"> 
+        <div class="col-xs-6 col-sm-8 col-md-8" >
     <p>Nous sommes spécialisés dans tous types de constructions et nous prenons en charge les projets de A à Z. Vous pouvez nous confier en toute confiance des projets de toutes dimensions, des plus simples aux plus osés. Notre équipe est efficace, réactive et compétente. Nous entretenons toujours un dialogue de tous les instants avec nos clients. Bien qu'à la pointe de notre activité nous pratiquons des prix rigoureux et adaptés à tous les budgets.</p>
+</div>
+</div>
+</nav>
 
     <h1 class="text-center">Une équipe efficace</h1>
     <p>Notre équipe est jeune, experte et motivée. Notre entreprise est certifiée ISO 9001. Nous cherchons en permanence à améliorer la qualité de nos services et nous sommes à l'écoute de nos clients.</p>
@@ -75,7 +133,7 @@
       <button type="submit">Envoyer</button>
     </form>
 
-    <footer>
+     <footer class="text-center">
       <a class="btn btn-default" href="#"><i class="fa fa-twitter fa-2x"></i></a>
       <a class="btn btn-default" href="#"><i class="fa fa-facebook fa-2x"></i></a>
       <a class="btn btn-default" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
