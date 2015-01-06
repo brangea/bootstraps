@@ -38,6 +38,7 @@
       .jumbotron {
         background: black;
           margin-bottom:0;
+          
       }
       
          /* Styles pour les tablettes */
@@ -66,19 +67,27 @@
 
       <!-- Navigation
       ================================================== -->
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-sm-12">
-    <a href="#">La maison de l'architecture</a>
-     <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#qui">Qui sommes-nous ?</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    </div>
+ 
+ <div class="jumbotron">
+    <div class="container">
+      <nav class="navbar navbar-inverse" role="navigation">   
+        <div class="navbar-header">   
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><font size="5">La maison de l'architecture</font></a>
         </div>
-            </div>
-
+        <div class="collapse navbar-collapse">
+             <ul class="nav navbar-nav">
+                <li> <a href="#">Accueil</a> </li>
+                <li><a href="#">Qui sommes-nous ? </a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>      
+        </div>
+      </nav>
+      </div>
  
 
     </header>
@@ -105,26 +114,33 @@
     <img src="assets/img/archi4.jpg" alt="Architecture">
     </div>
     </nav>
-    
     </div>
     
-    
+        <h1 class="text-center">Bienvenue dans notre espace</h1>
     <div class="container-fluid">
-  
-    <h1 class="text-center">Bienvenue dans notre espace</h1>
-    </div>
       <nav class="row">
-       <div class="col-xs-6 col-sm-8 col-md-8" >
-    <img src="assets/img/accueil.jpg" alt="Accueil"> 
-        <div class="col-xs-6 col-sm-8 col-md-8" >
-    <p>Nous sommes spécialisés dans tous types de constructions et nous prenons en charge les projets de A à Z. Vous pouvez nous confier en toute confiance des projets de toutes dimensions, des plus simples aux plus osés. Notre équipe est efficace, réactive et compétente. Nous entretenons toujours un dialogue de tous les instants avec nos clients. Bien qu'à la pointe de notre activité nous pratiquons des prix rigoureux et adaptés à tous les budgets.</p>
+       <div class="col-xs-4 col-sm-6 col-md-6" id="realisations">
+          <a href="#"> <img src="assets/img/accueil.jpg" alt="Accueil"> </a>
+       </div>
+       <div class="col-xs-4 col-sm-6 col-md-6" id="projets">
+       <p>Nous sommes spécialisés dans tous types de constructions et nous prenons en charge les projets de A à Z. Vous pouvez nous confier en toute confiance des projets de toutes dimensions, des plus simples aux plus osés. Notre équipe est efficace, réactive et compétente. Nous entretenons toujours un dialogue de tous les instants avec nos clients. Bien qu'à la pointe de notre activité nous pratiquons des prix rigoureux et adaptés à tous les budgets.</p>
 </div>
-</div>
-</nav>
+      </nav>
+    </div>
+  
+     <h1 class="text-center">Une équipe efficace</h1>
+    <div class="container-fluid">
+      <nav class="row">
+       <div class="col-xs-4 col-sm-6 col-md-4" >
+          <p>Notre équipe est jeune, experte et motivée. Notre entreprise est certifiée ISO 9001. Nous cherchons en permanence à améliorer la qualité de nos services et nous sommes à l'écoute de nos clients.</p>
+       </div>
+       <div class="col-xs-4 col-sm-6 col-md-4">
+                     <img src="assets/img/equipe.jpg" alt="Equipe"> 
 
-    <h1 class="text-center">Une équipe efficace</h1>
-    <p>Notre équipe est jeune, experte et motivée. Notre entreprise est certifiée ISO 9001. Nous cherchons en permanence à améliorer la qualité de nos services et nous sommes à l'écoute de nos clients.</p>
-    <img src="assets/img/equipe.jpg" alt="Equipe">            
+</div>
+      </nav>
+    </div>
+         
 
     <h1>Un message pour nous ?</h1>
     <form role="form">
