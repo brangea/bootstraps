@@ -61,14 +61,14 @@
 
   </head>
 
-  <body data-spy="scroll" data-target=".navbar">
+  <body >
 
     <header>
 
       <!-- Navigation
       ================================================== -->
  
- <div class="jumbotron">
+
     <div class="container">
       <nav class="navbar navbar-inverse" role="navigation">   
         <div class="navbar-header">   
@@ -81,8 +81,8 @@
         </div>
         <div class="collapse navbar-collapse">
              <ul class="nav navbar-nav">
-                <li> <a href="#">Accueil</a> </li>
-                <li><a href="#">Qui sommes-nous ? </a></li>
+                <li> <a href="#accueil">Accueil</a> </li>
+                <li><a href="#qui">Qui sommes-nous ? </a></li>
                 <li><a href="#">Contact</a></li>
               </ul>      
         </div>
@@ -125,6 +125,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 </div>
 <script src="assets/js/jquery.js"></script>
@@ -224,6 +225,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Javascript de Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+  $(function () {
+    $('body').scrollspy({ target: '.navbar' });
+  });
+</script>
 
   </body>
 
